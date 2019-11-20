@@ -3,23 +3,32 @@ display: grid;
 grid-template-columns: 70%, 30%;
 }
 
-nav{
-    display: grid;
-    grid-column: 2;
-}
 img {
     border-style: none;
     border-radius: 100%;
     filter: grayscale(0);
 }
-image:hover{
 
+img:hover{
+    filter: grayscale(0);
+    border-style: none;
+    border-radius: 100%;
+    transition: 0.5s ease-in;
+    filter: grayscale(1);
+    transition: 0.3s ease-out; 
+}
 }
 h1{
     font-family: 'PT Sans', sans-serif;
     font-size: 3em
 }
-nav ul {
+/* from here onwards i modified work done by Una Kravets on codepen https://codepen.io/una/pen/FEtze*/
+.sidebar{
+    display: grid;
+    grid-column: 2;
+}
+
+.sidebar .menuoptions {
     display: grid;
     margin: 0;
     padding: 0;
@@ -28,7 +37,7 @@ nav ul {
     margin: 4em auto;
     
   }
-  nav ul a {
+  .sidebar .menuoptions a {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
@@ -38,6 +47,6 @@ nav ul {
     font-size: 2em;
     line-height: 1.5;
   }
-  nav ul a:hover {
+  .sidebar .menuoptions a:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
