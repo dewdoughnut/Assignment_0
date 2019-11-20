@@ -1,0 +1,28 @@
+nav{
+display: grid;
+grid-template-columns: 20%, 20%, 20%, 20%, 20%;
+grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    margin: 4em auto;
+    grid-column: 5;
+    grid-row: ;
+  }
+  nav ul a {
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+    line-height: 1.5;
+  }
+  nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
