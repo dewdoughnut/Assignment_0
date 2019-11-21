@@ -2,16 +2,20 @@ body {
 display: grid; /*this is to put everything in grid*/
 grid-template-columns: 80%, 20%;
 grid-template-rows: 20%, 20%, 20% 20% 20%;
-margin: 0em;
+margin: 1em;
 }
-
+.container{
+    grid-column: 3/span 2;
+    align-self: center;
+}
 .image { /*this is to put the image in a circle and go to greyscale with transition*/
     display: grid;
     border-style: none;
     border-radius: 100%;
     filter: grayscale(0);
     transition-duration: 0.5s;
-    grid-row: span 5;
+    display: block;
+    margin: 0 auto;
 }
 
 .image:hover{ /*this is to have the image expand and look all nice and greyscale*/
@@ -38,6 +42,7 @@ h2{ /*this is to have set up the sub title*/
     font-size: 1em;
     color: rgb(85, 85, 85);
     transition-duration: 0.5s;  
+    text-align: center;
 }
 
 h2:hover{ /*this is to have set up the sub title so it expands on hover*/
