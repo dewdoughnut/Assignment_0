@@ -1,54 +1,63 @@
-body {
-display: grid;
-grid-template-columns: 70%, 30%;
+body { 
+display: grid; /*this is to put everything in grid*/
+grid-template-columns: 80%, 20%;
+grid-template-rows: 20%, 20%, 20% 20% 20%;
+margin: 0em;
 }
 
-.image {
+.image { /*this is to put the image in a circle and go to greyscale with transition*/
+    display: grid;
     border-style: none;
     border-radius: 100%;
     filter: grayscale(0);
     transition-duration: 0.5s;
-
+    grid-row: span 5;
 }
 
-.image:hover{
+.image:hover{ /*this is to have the image expand and look all nice and greyscale*/
     filter: grayscale(0);
     border-style: none;
     border-radius: 25%;
     filter: grayscale(1);
 }
 
-h1{
+.title{ /*this is to have set up the title*/
     font-family: 'PT Sans', sans-serif;
     font-size: 3em;
     transition-duration: 0.5s;
     text-align: center;
+    grid-column: span 6;
 }
-h1:hover{
+
+h1:hover{ /*this is to have set up the title so it expands on hover*/
     font-size: 4em;
 }
-h2{
+
+h2{ /*this is to have set up the sub title*/
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
     color: rgb(85, 85, 85);
     transition-duration: 0.5s;  
 }
 
-h2:hover{
+h2:hover{ /*this is to have set up the sub title so it expands on hover*/
     color: rgb(165, 165, 165);
     font-size: 1.5em;
 }
-p{
+p{ /*this is to set up the paragraph font*/
     font-family: 'Public Sans', sans-serif;
-    
+}
+.text{
+    text-align: center;
+    grid-column: span 6;
 }
 /* from here onwards i modified work done by Una Kravets on codepen https://codepen.io/una/pen/FEtze*/
-.sidebar{
+.sidebar{ /*this is to set up the sidebar*/
     display: grid;
-    grid-column: 2;
+    grid-column: 6;
 }
 
-.sidebar .menuoptions {
+.sidebar .menuoptions { /*this is to set up the sidebar text fonts and orgonization*/
     display: grid;
     margin: 0;
     padding: 0;
@@ -57,17 +66,14 @@ p{
     margin: 4em auto;
     
   }
-  .sidebar .menuoptions a {
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
+  .sidebar .menuoptions a { /*this is to set up the sidebar text fonts, colours, and transition*/
     transition-duration: 0.5s;
     text-decoration: none;
     color: black;
     font-size: 2em;
     line-height: 1.5;
   }
-  .sidebar .menuoptions a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+  .sidebar .menuoptions a:hover { 
+    background-color: rgba(20, 20, 20, 0.5);
     font-size: 3em;
   }
