@@ -1,7 +1,5 @@
 body { 
 display: grid; /*this is to put everything in grid*/
-grid-template-columns: 80%, 20%;
-grid-template-rows: 20%, 20%, 20% 20% 20%;
 margin: 1em;
 }
 .selfbox{
@@ -73,7 +71,6 @@ p{ /*this is to set up the paragraph font*/
 .github:hover{
     filter: saturate(0);
     border-style: none;
-    size: 5em;
     border-radius: 25%;
     filter: saturate(15);
 }
