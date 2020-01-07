@@ -56,12 +56,34 @@ p{ /*this is to set up the paragraph font*/
     grid-column: span 6;
 }
 .link{
-    grid-column: 3/span 2;
+    grid-column: 2/span 4;
     align-self: center;
 }
-.github{
+.link_items{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns:  repeat(5, 150px);
+        grid-template-rows: (5, 100px);
+        
+}
+.telephone{
+    border: none;
+    border-radius: 3px;
+    display: grid;
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto; 
+}
+.telephone:hover{
+    filter: saturate(0);
     border-style: none;
-    border-radius: 0%;
+    border-radius: 25%;
+    filter: saturate(15);
+}
+.github{
+    border:none;
+    border-radius: 3px;
     display: grid;
     filter: grayscale(0);
     transition-duration: 0.5s;
@@ -74,7 +96,36 @@ p{ /*this is to set up the paragraph font*/
     border-radius: 25%;
     filter: saturate(15);
 }
-
+.email{
+    border:none;
+    border-radius: 3px;
+    display: grid;
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto; 
+}
+.email:hover{
+    filter: saturate(0);
+    border-style: none;
+    border-radius: 25%;
+    filter: saturate(15);
+}
+.linkedin{
+    border:none;
+    border-radius: 3px;
+    display: grid;
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto; 
+}
+.linkedin:hover{
+    filter: saturate(0);
+    border-style: none;
+    border-radius: 25%;
+    filter: saturate(15);
+}
 /* from here onwards i modified work done by Una Kravets on codepen https://codepen.io/una/pen/FEtze
 a lot of it has been changed but crediting sources is a good idea*/
 .sidebar{ /*this is to set up the sidebar*/
