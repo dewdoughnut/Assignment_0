@@ -126,11 +126,27 @@ p{ /*this is to set up the paragraph font*/
     border-radius: 25%;
     filter: saturate(15);
 }
+.twitter{
+    border:none;
+    border-radius: 3px;
+    display: grid;
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto; 
+}
+.twitter:hover{
+    filter: saturate(0);
+    border-style: none;
+    border-radius: 25%;
+    filter: saturate(15);
+}
 /* from here onwards i modified work done by Una Kravets on codepen https://codepen.io/una/pen/FEtze
 a lot of it has been changed but crediting sources is a good idea*/
 .sidebar{ /*this is to set up the sidebar*/
     display: grid;
-    grid-column: 6;
+    grid-column: 3/span 2;
+    align-self: center;
 }
 
 .sidebar .menuoptions { /*this is to set up the sidebar text fonts and orgonization*/
@@ -140,16 +156,28 @@ a lot of it has been changed but crediting sources is a good idea*/
     font-family: sans-serif;
     list-style: none;
     margin: 4em auto;
+    grid-gap: 1rem;
+    grid-template-columns:  repeat(4, 150px);
+    grid-template-rows: (5, 100px);
     
   }
   .sidebar .menuoptions a { /*this is to set up the sidebar text fonts, colours, and transition*/
     transition-duration: 0.5s;
+    border-style: none;
+    border-radius: 25%;
     text-decoration: none;
     color: black;
     font-size: 2em;
     line-height: 1.5;
   }
   .sidebar .menuoptions a:hover { 
-    background-color: rgba(58, 58, 58, 0.5);
+    border-style: none;
+    border-radius: 10px; /* may require vendor prefixes */
+    background: #01a7c2;
     font-size: 3em;
+    
   }
+  
+  .sidebar .menuoptions .list_text{
+      text-align: center;
+  } 
