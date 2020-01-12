@@ -1,4 +1,7 @@
-body { 
+head{
+    display: grid;
+}
+body{ 
 display: grid; /*this is to put everything in grid*/
 margin: 1em;
 }
@@ -118,7 +121,14 @@ p{ /*this is to set up the paragraph font*/
     text-align: center;
     list-style: none;
 }
-
+.sublist a{
+    font-family: 'Inconsolata', monospace;
+    color: #4e4e4e;
+    font-size: 1em;  
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
 /*this is the images, 
 they need to be individuals as they saturate differently 
 and them all under one boat breaks the individual saturation 
