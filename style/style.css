@@ -41,13 +41,29 @@ h1:hover{ /*this is to have set up the title so it expands on hover*/
 
 h2{ /*this is to have set up the sub title*/
     font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-    color: rgb(85, 85, 85);
+    font-size: 1.35em;
+    color: rgb(61, 61, 61);
     transition-duration: 0.5s;  
     text-align: center;
 }
-
-h2:hover{ /*this is to have set up the sub title so it expands on hover*/
+h3{ /*this is to have set up the sub title*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    color: rgb(138, 138, 138);
+    transition-duration: 0.5s;  
+    text-align: center;
+}
+.myname{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 200%;
+    transition-duration: 0.5s;
+    text-align: center;
+    grid-column: 3/span 2;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+}
+.myname:hover{ /*this is to have set up the sub title so it expands on hover*/
     color: rgb(165, 165, 165);
     font-size: 1.5em;
 }
@@ -70,10 +86,43 @@ p{ /*this is to set up the paragraph font*/
 .link_items{
         display: grid;
         grid-gap: 10px;
-        grid-template-columns:  repeat(auto-fill, 73px); /* this was learned from Jorge Montoya on his blog https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/ */
+        grid-template-columns: repeat(5, 1fr); /* this was learned from Jorge Montoya on his blog https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/ */
         align-self: center;
+        text-align: center;
         justify-content: center;
+        margin: 10px;
+        
 }
+.portfolio{
+    text-align: center;
+    justify-items: center;
+    grid-column:  3/span 2;
+    display: grid;
+    grid-gap: 10px; /* this was learned from Jorge Montoya on his blog https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/ */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100%;
+    display: grid;
+    
+}
+.Dinoboy{
+    align-self: center;
+    justify-items: center;
+    text-align: center;
+    object-fit: scale-down; max-width: 100%;
+}
+
+.sublist{
+    font-family: 'Inconsolata', monospace;
+    color: #6e8898;
+    font-size: 1em;  
+    text-align: center;
+    list-style: none;
+}
+
+/*this is the images, 
+they need to be individuals as they saturate differently 
+and them all under one boat breaks the individual saturation 
+when you hover over it*/
 .telephone{
     border: none;
     border-radius: 3px;
@@ -154,6 +203,7 @@ p{ /*this is to set up the paragraph font*/
     border-radius: 25%;
     filter: saturate(15);
 }
+
 /* from here onwards i modified work done by Una Kravets on codepen https://codepen.io/una/pen/FEtze
 a lot of it has been changed but crediting sources is a good idea*/
 .sidebar{ /*this is to set up the sidebar*/
@@ -170,7 +220,11 @@ a lot of it has been changed but crediting sources is a good idea*/
     list-style: none;
     margin: 0px;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 126px);;
+    text-align: center;
+    align-self: center; 
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
   .sidebar .menuoptions a { /*this is to set up the sidebar text fonts, colours, and transition*/
     transition-duration: 0.5s;
@@ -192,3 +246,4 @@ a lot of it has been changed but crediting sources is a good idea*/
   .sidebar .menuoptions .list_text{
       text-align: center;
   } 
+  
