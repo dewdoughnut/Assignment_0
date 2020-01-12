@@ -49,7 +49,7 @@ h2{ /*this is to have set up the sub title*/
 h3{ /*this is to have set up the sub title*/
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
-    color: rgb(138, 138, 138);
+    color: rgb(82, 81, 81);
     transition-duration: 0.5s;  
     text-align: center;
 }
@@ -113,7 +113,7 @@ p{ /*this is to set up the paragraph font*/
 
 .sublist{
     font-family: 'Inconsolata', monospace;
-    color: #6e8898;
+    color: #4e4e4e;
     font-size: 1em;  
     text-align: center;
     list-style: none;
