@@ -5,6 +5,13 @@ body{
 display: grid; /*this is to put everything in grid*/
 margin: 1em;
 }
+.content{
+    width:640px;
+    height:500vh;
+    font-size:14px;
+    padding-top:100px;
+    margin:0 auto 0;
+}
 .selfbox{
     grid-column: 3/span 2;
     align-self: center;
@@ -35,6 +42,8 @@ margin: 1em;
     border: none;
     border-radius: 3px;
     margin: 10px;
+    height: 100px;
+    line-height:100px;
 }
 
 h1:hover{ /*this is to have set up the title so it expands on hover*/
@@ -218,8 +227,18 @@ when you hover over it*/
 a lot of it has been changed but crediting sources is a good idea*/
 .sidebar{ /*this is to set up the sidebar*/
     display: grid;
-    grid-column: 3/span 2;
+    grid-column: 1/span 6;
     align-self: center;
+    transition-duration: 0.5s;
+  width:100%;
+  font-size:20px;
+  border-radius: 10px;
+  background: #98C1D9;
+  color: #ffffff;
+  position:relative;
+  
+  z-index:3;
+  text-transform:uppercase;
 }
 
 .sidebar .menuoptions { /*this is to set up the sidebar text fonts and orgonization*/
@@ -233,7 +252,7 @@ a lot of it has been changed but crediting sources is a good idea*/
     text-align: center;
     align-self: center; 
     justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
   .sidebar .menuoptions a { /*this is to set up the sidebar text fonts, colours, and transition*/
@@ -242,18 +261,25 @@ a lot of it has been changed but crediting sources is a good idea*/
     border-radius: 25%;
     text-decoration: none;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5;
   }
   .sidebar .menuoptions a:hover { 
     border-style: none;
     border-radius: 10px; /* may require vendor prefixes */
-    background: #01a7c2;
-    font-size: 3em;
+    background: #087E8B;
+    font-size: 1.75em;
     
   }
   
   .sidebar .menuoptions .list_text{
       text-align: center;
   } 
+  
+  .stuck{
+    grid-column: 1/span 6;
+    position:fixed;
+    top:0;
+    border-radius: 10px;
+  }
   
