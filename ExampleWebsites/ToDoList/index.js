@@ -35,7 +35,7 @@ btnClr.style.display = "none"; //hide clear btn
         //add item to the to do list
 	function addTodoItem() {
 		if(input.value === "") {
-			alert("You must enter some value!");
+			alert("Tho old ones will not accept empty promises!");
         }
         
 		else {
