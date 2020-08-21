@@ -299,4 +299,44 @@ a lot of it has been changed but crediting sources is a good idea*/
     
     
   }
-  
+  .circles img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    background: url(images/me-liz.jpg) no-repeat;
+}
+
+.circles {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: opacity .25s ease-in-out;
+}
+
+.btn-get-resume .btn {
+    font-size: 1.3rem;
+    opacity: .75;
+    transition: opacity .25s ease-in-out;
+    color: rgb(33, 33, 139);
+    font-family: sans-serif;
+}
+
+.btn-get-resume:hover {
+    opacity: 0.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(242, 243, 247);
+    border: 2px dotted;
+    border-radius: 4px;
+    text-decoration: none;
+}

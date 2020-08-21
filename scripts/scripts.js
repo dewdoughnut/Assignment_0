@@ -25,3 +25,20 @@ $(document).ready(function(){
     });
       
     });
+    
+    function changePic() {
+      document.getElementById("profilePic").src = "assets/me.webp";
+    }
+    
+    function normalPic() {
+      document.getElementById("profilePic").src = "assets/me.jpg";
+    }
+  
+  
+  $(".go-to-contact").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".contact").offset().top
+      }, 1000);
+  });
+  
+  
