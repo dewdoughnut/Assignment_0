@@ -3,14 +3,13 @@
     font-size: 1rem;
 }
 body{
-    margin-top: 100px;
+    margin-top: 50px;
     overflow-y: hidden; 
     height: 90vh;
     width: 100vw;
-    background-image: url('https://source.unsplash.com/1?nature,water600x900/');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: -2;
 }
 i{
@@ -24,7 +23,7 @@ opacity: 0.75;
 z-index: 1;
 }
 #quote{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgba(11, 12, 12, 0.75);
 }
 .fa-redo-alt{
@@ -36,8 +35,16 @@ z-index: 1;
     text-align: center;
     padding: 5px 0;
 }
+@media screen and (min-width: 600px) {
+	div.quote-container{
+		width: 500px; 
+    }
+    p#quote{
+        font-size: 1.7rem;
+    }
+}
 .quote-container{
-    width: 400px; 
+    width: 300px; 
     display: block;
     margin: 0 auto;
     /* border-radius: 0px; */

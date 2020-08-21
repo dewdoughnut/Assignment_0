@@ -1,5 +1,5 @@
 function genQuote() {
-    let randNum = Math.floor(Math.random() * 7) + 1;
+    let randNum = Math.floor(Math.random() * 9) + 1;
     document.getElementById('quote').innerHTML = quotes[randNum];
     let tweetQuote = quotes[randNum].split(' ').join('%20');
     tweetQuote = tweetQuote.split('<br>').join('');
@@ -8,6 +8,6 @@ function genQuote() {
   }
   
   //quote array
-  let quotes = ["Blank", "\"Either I will find a way, or I will make one.\" - Philip Sidney", "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"- Thomas A. Edison", "\"You are never too old to set another goal or to dream a new dream.\"- C.S Lewis", "\"If you can kiss it, you can do it.\"- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"- Muhammad Ali", "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"- Bruce Lee",];
+  let quotes = ["Blank", "\"Bigotry and racism are among the deadliest social ills plaguing the world today. But, unlike a team of costumed super-villains, they can’t be halted with a punch in the snoot, or a zap from a ray gun. The only way to destroy them is to expose them—to reveal them for the insidious evils they really are.\" - Stan Lee", "\" Do you think that God stays in heaven because he too lives in fear of what he has created?\" - Steve Buscemi - Spy Kids 2", "\"I was busy pushing bodies around as you well know and what would a note say, Dan? “Cat dead, details later\"- Herbert West - Reanimator", "\"We have such sights to show you\"- Pinhead - hellraiser", "\"WELCOME TO PRIME TIME, BITCH!\"- Freddy Krueger", "\"I'd buy that for a Dollar\"- Robocop", "\"I have come here to chew bubblegum and kick ass. and I'm all out of bubblegum\"- Nada - They Live", "\"Dreams save us. Dreams lift us up and transform us into something better. And on my soul, I swear that until my dream of a world where dignity, honor and justice are the reality we all share, I'll never stop fighting. Ever!\"- Superman - Action Comics #775", "\"With great power comes great responsibility\"- Uncle Ben",];
 
 

@@ -45,6 +45,20 @@ margin: 1em;
     height: 100px;
     line-height:100px;
 }
+@media screen and (max-width: 600px) {
+    .title{ /*this is to have set up the title*/
+        font-family: 'PT Sans', sans-serif;
+        font-size: 250%;
+        transition-duration: 0.5s;
+        text-align: center;
+        grid-column: 3/span 2;
+        border: none;
+        border-radius: 3px;
+        margin: 10px;
+        height: 100px;
+        line-height:100px;
+    }
+}
 
 h1:hover{ /*this is to have set up the title so it expands on hover*/
     font-size: 550%;
